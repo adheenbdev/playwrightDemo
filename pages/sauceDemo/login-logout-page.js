@@ -13,7 +13,7 @@ exports.logActionsSauceLab = class logActionsSauceLab {
   }
 
   async navigateToUrl(URL) {
-    console.log('the url to launch is ' + URL)
+
     await this.page.goto(URL);
     await expect(this.sauceDemo_loginHeader).toHaveText(['Swag Labs']);
   }

@@ -8,7 +8,7 @@ test('record demo 2', async () => {
   test.slow();
 
   const browser = await chromium.launch({
-    headless: false
+    //headless: false
   });
   const context = await browser.newContext();
   const page = await context.newPage();
